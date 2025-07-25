@@ -149,6 +149,7 @@
 ]
 ```
 ## 2 模拟首次订阅账单付款成功 stripe trigger invoice.payment_succeeded
+```json
 [
   {
     "headers": {
@@ -330,8 +331,10 @@
     "executionMode": "production"
   }
 ]
-
+```
 ## 3 模拟创建订阅对象（会分开发送2条过来）stripe trigger customer.subscription.created
+- 第一条
+```json
 [
   {
     "headers": {
@@ -526,8 +529,9 @@
     "executionMode": "production"
   }
 ]
-
-第二条
+```
+```json
+- 第二条
 [
   {
     "headers": {
@@ -710,8 +714,10 @@
     "executionMode": "production"
   }
 ]
+```
 ## 4 模拟用户取消订阅 stripe trigger customer.subscription.deleted
-第一条
+- 第一条
+```json
 [
   {
     "headers": {
@@ -906,6 +912,8 @@
     "executionMode": "production"
   }
 ]
+```
+```json
 第二条
 [
   {
@@ -1089,6 +1097,8 @@
     "executionMode": "production"
   }
 ]
+```
+```json
 第三条
 [
   {
@@ -1284,3 +1294,4 @@
     "executionMode": "production"
   }
 ]
+```
