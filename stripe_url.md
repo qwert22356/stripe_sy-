@@ -1,4 +1,5 @@
 ## 1 stripe trigger checkout.session.completed   模拟订阅并付款url
+'''json
 [
   {
     "headers": {
@@ -146,7 +147,7 @@
     "executionMode": "production"
   }
 ]
-
+'''
 ## 2 模拟首次订阅账单付款成功 stripe trigger invoice.payment_succeeded
 [
   {
